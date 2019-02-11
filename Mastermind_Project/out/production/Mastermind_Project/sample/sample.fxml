@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Circle fx:id="c1Hidden" fill="DODGERBLUE" layoutX="55.0" layoutY="55.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c2Hidden" fill="DODGERBLUE" layoutX="137.0" layoutY="55.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c3Hidden" fill="DODGERBLUE" layoutX="219.0" layoutY="55.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c4Hidden" fill="DODGERBLUE" layoutX="301.0" layoutY="55.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="playBtn" layoutX="406.0" layoutY="42.0" mnemonicParsing="false" onAction="#playGame" text="Play" />
+      <Line endX="225.0" layoutX="115.0" layoutY="106.0" startX="-100.0" />
+      <Text layoutX="402.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position" />
+      <Text layoutX="501.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" />
+      <Button fx:id="resetBtn" layoutX="493.0" layoutY="43.0" mnemonicParsing="false" onAction="#resetGame" text="Restart" />
+      <HBox fx:id="guessBox1" layoutX="13.0" layoutY="121.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1Guess1" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2Guess1" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3Guess1" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4Guess1" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox fx:id="guessBox2" layoutX="13.0" layoutY="209.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c2Guess2" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3Guess2" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4Guess2" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c1Guess2" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox fx:id="guessBox3" layoutX="13.0" layoutY="298.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1Guess3" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2Guess3" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3Guess3" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4Guess3" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox fx:id="guessBox4" layoutX="13.0" layoutY="389.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1Guess4" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2Guess4" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3Guess4" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4Guess4" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox fx:id="guessBox5" layoutX="13.0" layoutY="477.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1Guess5" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2Guess5" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3Guess5" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4Guess5" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox fx:id="guessBox6" layoutX="13.0" layoutY="565.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1Guess6" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2Guess6" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3Guess6" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4Guess6" fill="DODGERBLUE" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <VBox fx:id="positionBox" alignment="CENTER" layoutX="370.0" layoutY="128.0" prefHeight="514.0" prefWidth="100.0" spacing="70.0">
+         <children>
+            <Text fx:id="posGuess1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="posGuess2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="posGuess3" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="posGuess4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="posGuess5" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="posGuess6" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox fx:id="colorNumBox" alignment="CENTER" layoutX="465.0" layoutY="128.0" prefHeight="514.0" prefWidth="100.0" spacing="70.0">
+         <children>
+            <Text fx:id="guess1Color" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="guess2Color" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="guess3Color" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="guess4Color" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="guess5Color" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="guess6Color" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>
